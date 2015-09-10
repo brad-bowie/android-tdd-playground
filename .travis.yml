@@ -1,8 +1,11 @@
 language: android
 jdk: oraclejdk7
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
   directories:
     - node_modules
+    - $HOME/.gradle/caches/
 sudo: false
 
 android:
