@@ -1,4 +1,3 @@
-# Trigger
 language: android
 jdk: oraclejdk7
 before_cache:
@@ -7,9 +6,6 @@ cache:
   directories:
     - node_modules
     - $HOME/.gradle/caches/
-sudo: required
-services:
-  - docker
 
 android:
   components:
